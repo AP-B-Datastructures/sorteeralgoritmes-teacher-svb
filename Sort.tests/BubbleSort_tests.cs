@@ -10,8 +10,8 @@ namespace Sort.tests
         public void BubbleSort_SortsArrayInAscendingOrder()
         {
             // Arrange
-            int[] input = { 5, 2, 9, 1, 5, 6 };
-            int[] expected = { 1, 2, 5, 5, 6, 9 };
+            int[] input = RandomArrayGenerator.Generate(5, 1, 5, true);
+            int[] expected = { 1, 2, 3, 4, 5 };
 
             // Act
             int[] result = BubbleSort.Sort(input);
