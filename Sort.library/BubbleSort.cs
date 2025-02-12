@@ -8,5 +8,10 @@ namespace Sort.library
         {
             throw new NotImplementedException();
         }
+        
+        public static int[] SortAdaptive(int[] input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
