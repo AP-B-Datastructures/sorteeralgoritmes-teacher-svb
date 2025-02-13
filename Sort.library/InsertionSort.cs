@@ -4,9 +4,8 @@ namespace Sort.library
 {
     public class InsertionSort
     {
-        public static int[] Sort(int[] input)
+        public static void Sort(int[] input)
         {
-            throw new NotImplementedException();
         }
     }
 }

@@ -5,15 +5,13 @@ namespace Sort.library
     public class SelectionSort
     {
         // Selection sort voor integers
-        public static int[] Sort(int[] input)
+        public static void Sort(int[] input)
         {
-            throw new NotImplementedException();
         }
 
         // Selection sort voor strings
-        public static int[] Sort(string[] input)
+        public static void Sort(string[] input)
         {
-            throw new NotImplementedException();
         }
     }
 }
