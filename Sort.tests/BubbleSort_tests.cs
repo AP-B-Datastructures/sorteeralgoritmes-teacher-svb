@@ -10,14 +10,30 @@ namespace Sort.tests
         public void BubbleSort_SortsArrayInAscendingOrder()
         {
             // Arrange
-            int[] input = RandomArrayGenerator.Generate(5, 1, 5, true);
+            int[] input = {5, 1, 3, 2, 4};
             int[] expected = { 1, 2, 3, 4, 5 };
 
             // Act
-            int[] result = BubbleSort.Sort(input);
+            BubbleSort.Sort(input);
 
             // Assert
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, input);
+        }
+
+        [TestMethod]
+        public void BubbleSort_SortsLargeArrayInAscendingOrder()
+        {
+            // Arrange
+            int[] input = RandomArrayGenerator.Generate(1000, 1, 100000, false);
+
+            // Act
+            BubbleSort.Sort(input);
+
+            // Assert
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+                Assert.IsTrue(input[i] <= input[i+1]);
+            }
         }
 
         [TestMethod]
