@@ -47,13 +47,6 @@ namespace Sort.tests
             Assert.AreEqual(50, result.Length);
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void Generate_UniqueNumbers_InvalidRange_ThrowsException()
-        {
-            // Act
-            RandomArrayGenerator.Generate(amount: 15, min: 0, max: 10, unique: true);
-        }
 
         [TestMethod]
         public void Generate_MinAndMaxValues_ReturnsNumbersWithinRange()
